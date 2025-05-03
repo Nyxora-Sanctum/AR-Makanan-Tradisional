@@ -153,6 +153,14 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         public event Action<GameObject> objectSpawned;
 
         /// <summary>
+        /// Event invoked when all objects are deleted.
+        /// </summary>
+        public event Action allObjectsDeleted;
+
+        private GameObject m_CurrentSpawnedObject;
+        private readonly List<GameObject> m_SpawnedObjects = new List<GameObject>();
+
+        /// <summary>
         /// See <see cref="MonoBehaviour"/>.
         /// </summary>
         void Awake()
@@ -177,21 +185,18 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         }
 
         /// <summary>
-        /// Attempts to spawn an object from <see cref="objectPrefabs"/> at the given position. The object will have a
-        /// yaw rotation that faces <see cref="cameraToFace"/>, plus or minus a random angle within <see cref="spawnAngleRange"/>.
+        /// Attempts to spawn an object from <see cref="objectPrefabs"/> at the given position.
+        /// Will delete any previously spawned object first.
         /// </summary>
         /// <param name="spawnPoint">The world space position at which to spawn the object.</param>
         /// <param name="spawnNormal">The world space normal of the spawn surface.</param>
         /// <returns>Returns <see langword="true"/> if the spawner successfully spawned an object. Otherwise returns
         /// <see langword="false"/>, for instance if the spawn point is out of view of the camera.</returns>
-        /// <remarks>
-        /// The object selected to spawn is based on <see cref="spawnOptionIndex"/>. If the index is outside
-        /// the range of <see cref="objectPrefabs"/>, this method will select a random prefab from the list to spawn.
-        /// Otherwise, it will spawn the prefab at the index.
-        /// </remarks>
-        /// <seealso cref="objectSpawned"/>
         public bool TrySpawnObject(Vector3 spawnPoint, Vector3 spawnNormal)
         {
+            // Delete any existing object first
+            DeleteAllObjects();
+
             if (m_OnlySpawnInView)
             {
                 var inViewMin = m_ViewportPeriphery;
@@ -205,33 +210,62 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
             }
 
             var objectIndex = isSpawnOptionRandomized ? Random.Range(0, m_ObjectPrefabs.Count) : m_SpawnOptionIndex;
-            var newObject = Instantiate(m_ObjectPrefabs[objectIndex]);
-            if (m_SpawnAsChildren)
-                newObject.transform.parent = transform;
+            m_CurrentSpawnedObject = Instantiate(m_ObjectPrefabs[objectIndex]);
+            m_SpawnedObjects.Add(m_CurrentSpawnedObject);
 
-            newObject.transform.position = spawnPoint;
+            if (m_SpawnAsChildren)
+                m_CurrentSpawnedObject.transform.parent = transform;
+
+            m_CurrentSpawnedObject.transform.position = spawnPoint;
             EnsureFacingCamera();
 
             var facePosition = m_CameraToFace.transform.position;
             var forward = facePosition - spawnPoint;
             BurstMathUtility.ProjectOnPlane(forward, spawnNormal, out var projectedForward);
-            newObject.transform.rotation = Quaternion.LookRotation(projectedForward, spawnNormal);
+            m_CurrentSpawnedObject.transform.rotation = Quaternion.LookRotation(projectedForward, spawnNormal);
 
             if (m_ApplyRandomAngleAtSpawn)
             {
                 var randomRotation = Random.Range(-m_SpawnAngleRange, m_SpawnAngleRange);
-                newObject.transform.Rotate(Vector3.up, randomRotation);
+                m_CurrentSpawnedObject.transform.Rotate(Vector3.up, randomRotation);
             }
 
             if (m_SpawnVisualizationPrefab != null)
             {
                 var visualizationTrans = Instantiate(m_SpawnVisualizationPrefab).transform;
                 visualizationTrans.position = spawnPoint;
-                visualizationTrans.rotation = newObject.transform.rotation;
+                visualizationTrans.rotation = m_CurrentSpawnedObject.transform.rotation;
             }
 
-            objectSpawned?.Invoke(newObject);
+            objectSpawned?.Invoke(m_CurrentSpawnedObject);
             return true;
         }
+
+        /// <summary>
+        /// Deletes all spawned objects.
+        /// </summary>
+        public void DeleteAllObjects()
+        {
+            foreach (var obj in m_SpawnedObjects)
+            {
+                if (obj != null)
+                {
+                    Destroy(obj);
+                }
+            }
+            m_SpawnedObjects.Clear();
+            m_CurrentSpawnedObject = null;
+            allObjectsDeleted?.Invoke();
+        }
+
+        /// <summary>
+        /// Gets the currently spawned object, or null if none exists.
+        /// </summary>
+        public GameObject GetCurrentSpawnedObject() => m_CurrentSpawnedObject;
+
+        /// <summary>
+        /// Gets all spawned objects.
+        /// </summary>
+        public IReadOnlyList<GameObject> GetAllSpawnedObjects() => m_SpawnedObjects;
     }
 }

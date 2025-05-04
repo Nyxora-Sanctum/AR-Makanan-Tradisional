@@ -1,0 +1,1 @@
+C:\Users\Foliv\OneDrive\Documents\GitHub\AR-Makanan-Tradisional\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\cxx\RelWithDebInfo\6j576xe4\obj\arm64-v8a

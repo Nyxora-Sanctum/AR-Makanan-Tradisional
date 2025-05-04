@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 7720594385181660816}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3709, y: 0.1925, z: -0.0246}
+  m_LocalPosition: {x: 1.3709, y: 0, z: -0.0246}
   m_LocalScale: {x: 0.125, y: 0.125, z: 0.125}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -102,7 +102,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -280,7 +280,7 @@ Transform:
   m_GameObject: {fileID: 9156923850339134142}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.139, z: 0}
+  m_LocalPosition: {x: 0, y: 0.529, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -323,7 +323,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a4b7e2d441c81264fb8078f3206b3bd2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.21396476
+      value: 0.60396475
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a4b7e2d441c81264fb8078f3206b3bd2,
         type: 3}
@@ -370,6 +370,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Circle.006
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a4b7e2d441c81264fb8078f3206b3bd2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -397,7 +402,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: b2887fa0416170848b8948266a60f5c1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.39
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b2887fa0416170848b8948266a60f5c1,
         type: 3}
@@ -449,6 +454,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: mangkok
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b2887fa0416170848b8948266a60f5c1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -476,7 +486,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c442fb18a778dea4ba990225a91c9c69,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.1904617
+      value: 0.5804617
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c442fb18a778dea4ba990225a91c9c69,
         type: 3}
@@ -523,6 +533,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Circle.008
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c442fb18a778dea4ba990225a91c9c69,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -550,7 +565,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 5eda67187585f4645976b8451ebf9bc5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.246
+      value: 0.636
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5eda67187585f4645976b8451ebf9bc5,
         type: 3}
@@ -597,6 +612,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube.003
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5eda67187585f4645976b8451ebf9bc5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -624,7 +644,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 5dfbd9a0eecd5b74f8fcbccca5789138,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.21444285
+      value: 0.60444283
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5dfbd9a0eecd5b74f8fcbccca5789138,
         type: 3}
@@ -671,6 +691,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Circle.015
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5dfbd9a0eecd5b74f8fcbccca5789138,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -698,7 +723,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 215452e4bb318504c9cd0e0a60bab41b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.21444285
+      value: 0.60444283
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 215452e4bb318504c9cd0e0a60bab41b,
         type: 3}
@@ -745,6 +770,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Circle.016
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 215452e4bb318504c9cd0e0a60bab41b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -772,7 +802,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 74bde004f4a86594cabed047dd0d8251,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.2793364
+      value: 0.11066359
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 74bde004f4a86594cabed047dd0d8251,
         type: 3}
@@ -824,6 +854,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Circle.024
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 74bde004f4a86594cabed047dd0d8251,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -851,7 +886,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c3f27b9de4e680440953e38e6adfa09a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.2793364
+      value: 0.11066359
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c3f27b9de4e680440953e38e6adfa09a,
         type: 3}
@@ -897,6 +932,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Circle.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c3f27b9de4e680440953e38e6adfa09a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

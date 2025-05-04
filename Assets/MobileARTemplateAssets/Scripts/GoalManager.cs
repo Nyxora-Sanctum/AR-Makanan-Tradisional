@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
 /// <summary>
@@ -190,6 +191,11 @@ public class GoalManager : MonoBehaviour
             }
             CompleteGoal();
         }
+    }
+
+    public void gotoHome()
+    {
+        SceneManager.LoadScene("mainmenu");
     }
 
     void CompleteGoal()

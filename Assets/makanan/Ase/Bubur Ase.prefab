@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 794000865785592862}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 644.1819, y: 1.6428967, z: 344.79797}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -54,19 +54,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fallingObjects:
   - targetObject: {fileID: 2776403251452293247}
-    spawnDelay: 0
     fallDuration: 1
     fallEase: 10
   - targetObject: {fileID: 6031222280666734455}
-    spawnDelay: 0
     fallDuration: 1
     fallEase: 10
   - targetObject: {fileID: 7790333824906645742}
-    spawnDelay: 0
     fallDuration: 1
     fallEase: 10
   - targetObject: {fileID: 4688914079987763127}
-    spawnDelay: 0
     fallDuration: 1
     fallEase: 10
   targetCollider: {fileID: 3537186914451726918}
@@ -93,7 +89,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -276,7 +272,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: aa91b6fcf4851b64e9b1bc7649ed7323,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.007
+      value: 0.26099998
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aa91b6fcf4851b64e9b1bc7649ed7323,
         type: 3}
@@ -328,6 +324,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: daun bawang
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa91b6fcf4851b64e9b1bc7649ed7323,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -370,7 +371,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e114789f97fdb664d9f77fb0b593d0cf,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.254
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e114789f97fdb664d9f77fb0b593d0cf,
         type: 3}
@@ -421,6 +422,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: mangkok
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e114789f97fdb664d9f77fb0b593d0cf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -495,7 +501,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2bbc7c3d5e6ec72498db2273168b6e3c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.013
+      value: 0.26700002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2bbc7c3d5e6ec72498db2273168b6e3c,
         type: 3}
@@ -547,6 +553,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: nasi
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2bbc7c3d5e6ec72498db2273168b6e3c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -589,7 +600,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: ba53594f525521f4393c656c3f3d8ed1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.004
+      value: 0.25799996
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ba53594f525521f4393c656c3f3d8ed1,
         type: 3}
@@ -641,6 +652,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: bawang goreng
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ba53594f525521f4393c656c3f3d8ed1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -683,7 +699,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: f8b89f5dca4654f4ea91483aa47c4ec2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.037428
+      value: 0.29142803
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8b89f5dca4654f4ea91483aa47c4ec2,
         type: 3}
@@ -734,6 +750,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: kerupuk
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f8b89f5dca4654f4ea91483aa47c4ec2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -1,0 +1,5 @@
+C:/Users/Foliv/OneDrive/Documents/GitHub/AR-Makanan-Tradisional/.utmp/RelWithDebInfo/6j576xe4/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/Foliv/OneDrive/Documents/GitHub/AR-Makanan-Tradisional/.utmp/RelWithDebInfo/6j576xe4/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Users/Foliv/OneDrive/Documents/GitHub/AR-Makanan-Tradisional/.utmp/RelWithDebInfo/6j576xe4/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Users/Foliv/OneDrive/Documents/GitHub/AR-Makanan-Tradisional/.utmp/RelWithDebInfo/6j576xe4/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Users/Foliv/OneDrive/Documents/GitHub/AR-Makanan-Tradisional/.utmp/RelWithDebInfo/6j576xe4/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir

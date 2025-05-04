@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4159484539029955758}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.899, y: 0.164, z: -0.225}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -89,7 +89,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -272,7 +272,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d821cbd296526244fbc9592f1b681245,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.096
+      value: 0.13999999
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d821cbd296526244fbc9592f1b681245,
         type: 3}
@@ -324,6 +324,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Random
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d821cbd296526244fbc9592f1b681245,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -366,7 +371,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9556044db99b1c94c82588d665ec2571,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.10899998
+      value: 0.15299997
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9556044db99b1c94c82588d665ec2571,
         type: 3}
@@ -418,6 +423,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lontong
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9556044db99b1c94c82588d665ec2571,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -460,7 +470,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c7a93b26038180d40a1e9c3e94309b1e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.112
+      value: 0.15599999
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c7a93b26038180d40a1e9c3e94309b1e,
         type: 3}
@@ -512,6 +522,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabe
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7a93b26038180d40a1e9c3e94309b1e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -554,7 +569,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 1e58b9b1b773f604eb7fe315cf411529,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.107999966
+      value: 0.15199995
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1e58b9b1b773f604eb7fe315cf411529,
         type: 3}
@@ -606,6 +621,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kentang
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e58b9b1b773f604eb7fe315cf411529,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -648,7 +668,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: cd1b0c78f7282e2408b6f7bc64a73454,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.1
+      value: 0.144
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cd1b0c78f7282e2408b6f7bc64a73454,
         type: 3}
@@ -699,6 +719,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mangkok
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cd1b0c78f7282e2408b6f7bc64a73454,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

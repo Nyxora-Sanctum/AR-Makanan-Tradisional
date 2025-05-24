@@ -94,7 +94,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -324,6 +324,11 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 5a201e2f092c573468f9bf94bfd9b9f0,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 803747db916959444965ef60dad2aeac, type: 2}
     - target: {fileID: 919132149155446097, guid: 5a201e2f092c573468f9bf94bfd9b9f0,
         type: 3}
       propertyPath: m_Name
@@ -731,6 +736,11 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 94a5a906bbbcf334c96ab70da88a1710,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d299bb87e6490ea47b1d1652d95f20cd, type: 2}
     - target: {fileID: 919132149155446097, guid: 94a5a906bbbcf334c96ab70da88a1710,
         type: 3}
       propertyPath: m_Name

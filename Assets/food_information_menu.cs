@@ -10,7 +10,7 @@ public class FoodSelectionUI : MonoBehaviour
     [SerializeField] private Button backButton;
     [SerializeField] private Button menuButton;
     [SerializeField] private Button startGameButton;
-
+    private int currentFoodIndex = 0;
     [Header("Food Display")]
     [SerializeField] private TMP_Text foodTitleText;
     [SerializeField] private Image foodImage;
@@ -65,8 +65,28 @@ public class FoodSelectionUI : MonoBehaviour
         }
     }
 
+    public void SelectNextFood()
+    {
+        if (foodItems.Count == 0) return;
+
+        currentFoodIndex = (currentFoodIndex + 1) % foodItems.Count;
+        SelectFood(foodItems[currentFoodIndex]);
+    }
+
+    public void SelectPreviousFood()
+    {
+        if (foodItems.Count == 0) return;
+
+        currentFoodIndex--;
+        if (currentFoodIndex < 0) currentFoodIndex = foodItems.Count - 1;
+        SelectFood(foodItems[currentFoodIndex]);
+    }
+
     public void SelectFood(FoodData food)
     {
+        // Update current index
+        currentFoodIndex = foodItems.IndexOf(food);
+
         // Update UI with selected food data
         foodTitleText.text = food.foodName;
         foodImage.sprite = food.foodSprite;

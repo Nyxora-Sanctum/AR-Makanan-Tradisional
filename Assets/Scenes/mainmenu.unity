@@ -1098,7 +1098,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 614423924}
   m_HandleRect: {fileID: 614423923}
   m_Direction: 2
-  m_Value: 0.28380227
+  m_Value: 0.28380233
   m_Size: 0.3018687
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2235,8 +2235,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 787762440}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.19813125}
-  m_AnchorMax: {x: 1, y: 0.49999994}
+  m_AnchorMin: {x: 0, y: 0.1981313}
+  m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2881,6 +2881,138 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 759693202}
   m_CullTransparentMesh: 1
+--- !u!1 &779691604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 779691605}
+  - component: {fileID: 779691608}
+  - component: {fileID: 779691607}
+  - component: {fileID: 779691606}
+  m_Layer: 5
+  m_Name: previous
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &779691605
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779691604}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2103171653}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -423, y: 318.00006}
+  m_SizeDelta: {x: 148.247, y: 148.247}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &779691606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779691604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 779691607}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2103171656}
+        m_TargetAssemblyTypeName: FoodSelectionUI, Assembly-CSharp
+        m_MethodName: SelectPreviousFood
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &779691607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779691604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 8b93523f32be16548bf56b5a6db4fefe, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &779691608
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779691604}
+  m_CullTransparentMesh: 1
 --- !u!1 &787762439
 GameObject:
   m_ObjectHideFlags: 0
@@ -3304,7 +3436,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -974}
+  m_AnchoredPosition: {x: 0, y: -41.85498}
   m_SizeDelta: {x: 296.438, y: 83.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1047324751
@@ -5105,6 +5237,138 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1518961712}
   m_CullTransparentMesh: 1
+--- !u!1 &1543721052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1543721053}
+  - component: {fileID: 1543721056}
+  - component: {fileID: 1543721055}
+  - component: {fileID: 1543721054}
+  m_Layer: 5
+  m_Name: next
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1543721053
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543721052}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2103171653}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 413, y: 318}
+  m_SizeDelta: {x: 148.247, y: 148.247}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1543721054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543721052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1543721055}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2103171656}
+        m_TargetAssemblyTypeName: FoodSelectionUI, Assembly-CSharp
+        m_MethodName: SelectNextFood
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1543721055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543721052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 8f85d8ce213015144a117d359c69fcbd, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1543721056
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543721052}
+  m_CullTransparentMesh: 1
 --- !u!1 &1569187410
 GameObject:
   m_ObjectHideFlags: 0
@@ -5336,7 +5600,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -524.6375}
+  m_AnchoredPosition: {x: 0, y: -650}
   m_SizeDelta: {x: 911.876, y: 911.876}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1701996435
@@ -6227,6 +6491,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 351078011}
+  - {fileID: 1543721053}
+  - {fileID: 779691605}
   - {fileID: 1484475857}
   - {fileID: 1240539776}
   - {fileID: 10354387}
@@ -6311,341 +6577,395 @@ MonoBehaviour:
   - {fileID: 1351543885}
   foodItems:
   - foodName: Bubur Ase
-    foodDescription: "\r**BUBUR ASE - KULINER KHAS BETAWI**\r\n\r\nBubur Ase adalah
-      sajian khas Betawi yang semakin sulit ditemukan. Banyak orang Betawi, terutama
-      generasi muda, bahkan tidak mengenalnya. Hidangan ini memiliki rasa unik: manis,
-      gurih, pedas, dan asam, dari bubur santan yang dimasak dengan daun salam dan
-      kuah semur yang kaya rempah.\r\n\r\nASAL-USUL NAMA:\r\n\r\n* Versi pertama:
-      \"Ase\" berasal dari kata \"AC\", artinya dingin. Bubur dan lauk disajikan
-      dingin, tetapi kuah semurnya panas.\r\n* Versi kedua: \"Ase\" adalah singkatan
-      dari Asinan Semur, karena bubur ini merupakan perpaduan asinan dan semur.\r\n\r\nKOMPOSISI
-      UTAMA:\r\n\r\n* Bubur santan bertekstur halus\r\n* Kuah semur berisi tetelan
-      sapi, tahu, kentang\r\n* Sayuran segar: mentimun, taoge, lobak, sawi asin,
-      lokio\r\n* Pelengkap: emping, kerupuk merah, kacang tanah goreng\r\n* Sambal
-      sangek & sate Betawi sebagai pendamping\r\n\r\n---\r\n\r\n**RESEP BUBUR ASE**\r\n\r\nBAHAN
-      BUBUR:\r\n\r\n* 150 gram beras (cuci & tiriskan)\r\n* 1.000 ml santan encer\r\n*
-      2 lembar daun salam\r\n* 1 sdt garam\r\n\r\nBAHAN SAYUR ASE:\r\n\r\n* 200 gram
-      tahu goreng, potong dadu/segitiga\r\n* 200 gram kentang, potong dadu\r\n* 250
-      gram tetelan sapi (rebus, potong dadu)\r\n* 100 gram lobak, potong-potong\r\n*
-      100 gram sawi asin, iris \xB11 cm\r\n* 100 gram taoge\r\n* 750 ml kaldu\r\n*
-      50 gram ikan teri goreng\r\n* 100 gram kacang tanah goreng\r\n\r\nBUMBU HALUS:\r\n\r\n*
-      2 sdm bawang merah iris\r\n* 1 sdm bawang putih iris\r\n* 1/2 sdt merica bulat\r\n*
-      1 sdt pala cincang\r\n* 3 butir kemiri\r\n* 1/2 sdt ketumbar\r\n* 2 sdm minyak
-      goreng\r\n\r\nBUMBU LAIN:\r\n\r\n* 1 buah tomat, potong 4\r\n* 3 sdm kecap
-      manis\r\n\r\n---\r\n\r\n**CARA MEMBUAT:**\r\n\r\n1. **Kuah Sayur Ase:**\r\n\r\n  
-      * Tumis bumbu halus hingga harum.\r\n   * Tambahkan air kaldu secukupnya, masak
-      hingga mendidih.\r\n   * Masukkan daging, tahu, kentang, lobak. Masak sampai
-      empuk.\r\n   * Tambahkan tomat dan kecap, didihkan sebentar. Angkat.\r\n\r\n2.
-      **Bubur:**\r\n\r\n   * Masak beras dengan santan, daun salam, dan garam.\r\n  
-      * Aduk terus di api kecil hingga bubur mengental dan matang.\r\n\r\n3. **Penyajian:**\r\n\r\n  
-      * Tuang bubur ke mangkuk.\r\n   * Siram kuah beserta isinya.\r\n   * Tambahkan
-      sawi asin, taoge, kacang, dan teri goreng di atasnya.\r\n   * Sajikan hangat
-      bersama sambal sangek dan sate Betawi.\r\n\r\n---\r\n\r\r\n"
+    foodDescription: "Bubur Ase adalah sajian khas Betawi yang semakin sulit ditemukan,
+      bahkan banyak orang Betawi, terutama generasi muda, yang tidak mengenalnya.
+      Hidangan ini memiliki rasa unik dengan perpaduan manis, gurih, pedas, dan asam,
+      yang berasal dari bubur yang dimasak dengan santan dan daun salam.\n\nAda dua
+      versi yang menjelaskan asal-usul penamaan Bubur Ase. Versi pertama menyebutkan
+      bahwa penamaan bubur ase berasal dari kondisi penyajian bubur yang dingin,
+      berbeda dengan bubur lain yang biasanya disajikan hangat. \"Ase\" berakar dari
+      kata \"AC,\" yang berarti dingin. Lauk pendamping dalam bubur ini juga disajikan
+      dingin. Namun, kuah yang dituangkan harus panas, sehingga saat bercampur dengan
+      bubur, sajian ini menjadi hangat.\n\nVersi kedua mengungkapkan bahwa \"ase\"
+      adalah singkatan dari asinan semur, merujuk pada cara penyajian kuliner bubur
+      ini, yang merupakan campuran antara asinan dan semur.\n\nBubur Ase terdiri
+      dari bahan-bahan seperti tetelan sapi, tahu, dan kentang. Isian lainnya termasuk
+      mentimum, taoge, lobak, lokio, dan sawi asin. Sebagai pelengkap, bubur ase
+      biasanya diberi emping, kerupuk merah, dan kacang tanah goreng.\n\nMeski bahan-bahannya
+      mudah didapat, membuat Bubur Ase memerlukan keahlian, terutama dalam memasak
+      bubur yang tidak terlalu encer dan memiliki tekstur halus. Diperlukan pengalaman
+      dan trik khusus. Bubur Ase juga kerap disantap dengan berbagai jenis sate khas
+      Betawi, seperti sate ampela, sate ati, atau sate asem, yang menambah kenikmatan
+      sajian ini.\n\n<b>Resep Bubur Ase</b>\n\nBahan:\n\u2022 150 gram beras berkualitas
+      baik, cuci dan tiriskan\n\u2022 1.000 ml santan encer\n\u2022 2 lembar daun
+      salam\n\u2022 1 sdt garam\n\nSayur Ase:\n\u2022 200 gram tahu matang (yang
+      sudah digoreng), potong dadu sedang atau segitiga\n\u2022 200 gram kentang,
+      kupas, dan potong dadu sedang\n\u2022 250 gram daging tetelan (rebus dengan
+      500 ml air, potong ukuran dadu sedang)\n\u2022 100 gram lobak, kupas, potong-potong\n\u2022
+      100 gram sawi asin, cuci, iris ukuran 1 cm\n\u2022 100 gram taoge, buang akarnya\n\u2022
+      750 ml kaldu\n\u2022 50 gram teri asin, cuci dan goreng\n\u2022 100 gram kacang
+      tanah goreng\n\nBumbu Sayur Ase yang Dihaluskan:\n\u2022 2 sdm bawang merah,
+      iris\n\u2022 1 sdm bawang putih, iris\n\u2022 1/2 sdt merica bulat\n\u2022
+      1 sdt pala cincang\n\u2022 3 butir kemiri\n\u2022 1/2 sdt ketumbar\n\u2022
+      2 sdm minyak untuk menumis\n\nBumbu Lain:\n\u2022 1 butir tomat, potong jadi
+      empat\n\u2022 3 sdm kecap manis\n\n<b>Cara Membuat Bubur Ase Khas Betawi:</b>\n\n1.
+      Tumis bumbu yang dihaluskan dengan dua sendok makan minyak, hingga harum. Masukkan
+      air rebusan daging secukupnya, masak sampai mendidih.\n\n2. Masukkan daging
+      tetelan, tahu, lobak, dan kentang, masak hingga layu dan empuk. Tambahkan tomat
+      dan kecap, didihkan kembali sebentar. Angkat.\n\n3. Campur beras dengan santan,
+      daun salam, dan garam menjadi satu. Masak dengan api kecil sambil diaduk-aduk
+      hingga menjadi bubur yang kental dan matang. Angkat.\n\n4. Siapkan piring atau
+      mangkuk saji. Beri bubur secukupnya, siram dengan kuah beserta isinya. Taburi
+      dengan irisan sawi asin, taoge, kacang goreng, dan ikan teri goreng.\n\n5.
+      Hidangkan selagi panas dengan sambal sangek.\n"
     foodSprite: {fileID: 21300000, guid: 86db318ef99a01a4daa23c237eb933db, type: 3}
   - foodName: Soto Tangkar
-    foodDescription: "\r**SOTO TANGKAR - KULINER KHAS BETAWI**\r\n\r\nSoto Tangkar
-      dalam bahasa Betawi berarti **tulang iga**. Hidangan ini adalah soto berkuah
-      santan yang mirip dengan **Soto Kaki** atau **Soto Betawi**. Sudah ada sejak
-      masa penjajahan Belanda, saat masyarakat Betawi lebih sering membeli bagian
-      tangkar karena lebih murah dan berdaging sedikit.\r\n\r\nPada zaman itu, para
-      meneer Belanda menyisakan tangkar, kepala, dan jerohan untuk pekerja pribumi.
-      Bahan tersebut kemudian diolah dengan bumbu tradisional menjadi **Soto Tangkar**,
-      hidangan lezat yang bertahan hingga kini.\r\n\r\nKuah Soto Tangkar lebih ringan
-      dibanding Soto Betawi, dengan rasa segar dari **air asam Jawa**, **kencur**,
-      dan **lengkuas**. Beberapa pedagang juga menambahkan **kelapa sangrai halus**
-      agar kuah lebih gurih dan kental.\r\n\r\n---\r\n\r\n**RESEP SOTO TANGKAR**\r\n\r\nBAHAN
-      UTAMA:\r\n\r\n* 1 kg iga sapi, potong 5 cm\r\n* 2 L air\r\n* 3 sdm minyak sayur\r\n*
-      6 lembar daun jeruk\r\n* 4 cm kayu manis\r\n* 3 cm lengkuas, memarkan\r\n*
-      3 lembar daun salam\r\n* 2 batang serai, memarkan\r\n* 600 ml santan kental
-      (dari 1 butir kelapa)\r\n* 2 buah tomat merah, potong 8\r\n\r\nBUMBU HALUS:\r\n\r\n*
-      10 butir bawang merah\r\n* 5 siung bawang putih\r\n* 6 butir kemiri\r\n* 5
-      cm kunyit bakar\r\n* 3 sdt garam\r\n* 1 sdm ketumbar butiran, sangrai\r\n*
-      1 sdt jintan, sangrai\r\n* 1 sdt merica putih butiran\r\n\r\nPELENGKAP:\r\n\r\n*
-      Irisan bawang daun\r\n* Bawang merah goreng\r\n* Jeruk nipis\r\n* Kecap manis\r\n*
-      Emping\r\n\r\n---\r\n\r\n**CARA MEMBUAT:**\r\n\r\n1. Rebus iga sapi dalam 2
-      liter air hingga empuk (sekitar 2 jam). Sisihkan iga dan ukur kaldu sebanyak
-      1 liter, campur kembali dengan iga.\r\n2. Panaskan minyak, tumis bumbu halus
-      hingga harum dan matang. Masukkan ke dalam rebusan iga.\r\n3. Tambahkan daun
-      jeruk, kayu manis, lengkuas, daun salam, dan serai. Masak hingga mendidih,
-      kecilkan api, dan lanjutkan hingga iga empuk (sekitar 2 jam).\r\n4. Tuang santan,
-      masak hingga mendidih. Angkat.\r\n5. Sendokkan soto ke dalam mangkuk. Tambahkan
-      potongan tomat.\r\n6. Sajikan hangat bersama pelengkap seperti emping, bawang
-      goreng, jeruk nipis, dan kecap manis.\r\n\r\n---\r\n\r\r\n"
+    foodDescription: "Soto Tangkar dalam bahasa Betawi berarti tulang iga, dan merupakan
+      hidangan berkuah santan yang mirip dengan soto kaki atau soto Betawi. Hidangan
+      ini sudah ada sejak masa penjajahan Belanda, ketika masyarakat Betawi lebih
+      sering membeli bagian tangkar yang lebih murah dan berdaging sedikit, dibandingkan
+      dengan bagian daging lainnya.\n\nPada zaman itu, para meneer yang berpesta
+      akan memasak makanan mewah dan menyisakan bagian tangkar, kepala, dan jerohan
+      untuk diberikan kepada pekerja pribumi. Bagian-bagian tersebut kemudian diolah
+      menjadi hidangan lezat dengan bumbu tradisional, salah satunya adalah Soto
+      Tangkar.\n\nKuah santan Soto Tangkar lebih ringan daripada Soto Betawi atau
+      Soto Kaki, dengan rasa yang lebih segar berkat tambahan air asam Jawa, kencur,
+      dan lengkuas. Beberapa pedagang bahkan mencampur tangkar dengan daging dan
+      menambahkan kelapa sangrai halus untuk membuat kuahnya lebih gurih dan kental.\n\n<b>Resep
+      Soto Tangkar</b>\n\nBahan:\n\u2022 1 kg iga sapi, potong 5 cm\n\u2022 2 L air\n\u2022
+      3 sdm minyak sayur\n\u2022 6 lembar daun jeruk\n\u2022 4 cm kayu manis\n\u2022
+      3 cm lengkuas, memarkan\n\u2022 3 lembar daun salam\n\u2022 2 batang serai,
+      memarkan\n\u2022 600 ml santan kental, dari 1 butir kelapa\n\u2022 2 buah tomat
+      merah, potong 8\n\nBumbu, haluskan:\n\u2022 10 butir bawang merah\n\u2022 5
+      siung bawang putih\n\u2022 6 buah kemiri\n\u2022 5 cm kunyit bakar\n\u2022
+      3 sdt garam\n\u2022 1 sdm ketumbar butiran, sangrai\n\u2022 1 sdt jintan, sangrai\n\u2022
+      1 sdt merica putih butiran\n\nPelengkap:\n\u2022 Bawang daun\n\u2022 Bawang
+      merah goreng\n\u2022 Jeruk nipis\n\u2022 Kecap manis\n\u2022 Emping\n\n<b>Cara
+      membuat Soto Tangkar:</b>\n1. Rebus iga hingga empuk (kurang lebih dua jam).
+      Angkat. Sisihkan. Ukur kaldu nya sebanyak satu liter. Campur dengan iga. Sisihkan.\n2.
+      Panaskan minyak di atas api sedang. Tumis bumbu halus hingga harum dan matang.
+      Angkat. Masukkan bumbu ke dalam rebusan iga.\n3. Tambahkan daun jeruk, kayu
+      manis, lengkuas, daun salam, dan serai. Masak hingga mendidih. Kecilkan api.
+      Masak hingga daging iga empuk (kurang lebih dua jam).\n4. Tuang santan. Masak
+      hingga mendidih. Angkat. Sendokkan ke dalam mangkuk saji. Tambahkan tomat.
+      Sajikan hangat disertai pelengkap.\n"
     foodSprite: {fileID: 21300000, guid: a413af633b257964ca8554153fc1d32f, type: 3}
   - foodName: Gabus Pucung
-    foodDescription: "**GABUS PUCUNG - KULINER KHAS BETAWI**\r\n\r\nGabus Pucung
-      adalah hidangan khas Betawi yang dahulu populer di kawasan rawa, sawah, dan
-      sungai di Jakarta (Batavia). Ikan gabus (Channa striata) mudah ditemukan, begitu
-      pula dengan pohon pucung (Pangium edule) yang tumbuh di pekarangan dan sepanjang
-      Sungai Ciliwung. Karena kedua bahan ini tersedia melimpah, hidangan ini dinamakan
-      Gabus Pucung.\r\n\r\nGabus Pucung memiliki kuah hitam mirip rawon khas Jawa
-      Timur, tetapi menggunakan ikan gabus, bukan daging sapi. Meskipun disebut \"sayur\",
-      hidangan ini tidak mengandung sayuran.\r\n\r\nPada tahun 2014, Gabus Pucung
-      ditetapkan sebagai Warisan Budaya Tak Benda oleh Kementerian Pendidikan dan
-      Kebudayaan RI dari Provinsi DKI Jakarta. Hidangan ini bercita rasa gurih, asin,
-      dan sedikit pedas, sangat cocok disantap dengan nasi putih hangat.\r\n\r\nDalam
-      tradisi Betawi, ikan gabus juga menjadi bagian dari budaya **nyorong**, yaitu
-      kebiasaan memberikan makanan dari anak kepada orang tua atau menantu menjelang
-      puasa dan Lebaran, sebagai bentuk mempererat silaturahmi.\r\n\r\n---\r\n\r\n**RESEP
-      GABUS PUCUNG**\r\n(untuk 6 porsi)\r\n\r\nBAHAN UTAMA:\r\n\r\n* 1 kg ikan gabus
-      segar, siangi & bersihkan\r\n* 1 sdm air jeruk nipis\r\n* \xBD sdt garam\r\n*
-      Minyak untuk menggoreng\r\n* 5 buah keluwak (kluwek), ambil dagingnya\r\n*
-      1 batang serai, memarkan\r\n* 1 lembar daun salam\r\n* 1 L air\r\n\r\nBUMBU
-      HALUS:\r\n\r\n* 2 butir kemiri sangrai\r\n* 3 buah cabai merah keriting\r\n*
-      3 siung bawang putih\r\n* 5 butir bawang merah\r\n* 2 cm kencur\r\n* 2 cm lengkuas\r\n*
-      2 cm kunyit bakar\r\n* 1 cm terasi goreng\r\n* 1 sdt garam\r\n\r\n---\r\n\r\n**CARA
-      MEMBUAT:**\r\n\r\n1. Lumuri ikan gabus dengan air jeruk nipis dan garam. Diamkan
-      15 menit.\r\n2. Goreng ikan dalam minyak banyak hingga matang dan kulit kering.
-      Angkat dan tiriskan.\r\n3. Panaskan 2 sdm minyak bekas menggoreng, tumis bumbu
-      halus hingga harum.\r\n4. Masukkan keluwak, serai, dan daun salam. Tumis hingga
-      matang dan wangi.\r\n5. Tuangi air, masak hingga mendidih dan bumbu matang
-      sempurna.\r\n6. Siram kuah di atas ikan gabus goreng. Sajikan segera dengan
-      nasi panas.\r\n"
+    foodDescription: "Gabus Pucung adalah hidangan khas Betawi yang sangat digemari
+      masyarakat. Dulu, di sekitar Jakarta atau Batavia yang dipenuhi rawa dan sawah
+      serta sungai-sungai, ikan gabus (Channa striata) dengan mudah ditemukan. Begitu
+      juga dengan pohon pucung (Pangium edule) yang tumbuh di pinggir pekarangan
+      atau di sepanjang Sungai Ciliwung. Karena itu, ikan gabus dan pucung menjadi
+      bahan utama santapan sehari-hari masyarakat Betawi, sehingga hidangan ini dinamakan
+      gabus pucung.\n\nGabus Pucung, yang dalam bahasa Betawi disebut keluwak, memiliki
+      kuah hitam yang mirip dengan rawon khas Jawa Timur. Perbedaannya, gabus pucung
+      menggunakan ikan gabus sebagai bahan utama, bukan daging sapi. Meskipun namanya
+      mengandung kata \"sayur\", hidangan ini sebenarnya tidak mengandung sayuran.\n\nPada
+      tahun 2014, Kementerian Pendidikan dan Kebudayaan Indonesia menetapkan Gabus
+      Pucung sebagai Warisan Budaya Tak Benda dari Provinsi DKI Jakarta. Rasanya
+      yang gurih dan segar sangat cocok dipadukan dengan nasi panas. Kuahnya yang
+      gurih dan berwarna hitam berasal dari pucung (kluwek) dan memiliki rasa asin,
+      gurih, dan pedas yang sangat dominan, mirip dengan rasa rawon.  Bagi masyarakat
+      Betawi, ikan gabus bukan hanya sekadar makanan, tetapi juga bagian penting
+      dari tradisi nyorong, yaitu tradisi memberikan makanan dari anak kepada orang
+      tua atau menantu menjelang bulan puasa atau Lebaran, sebagai bentuk pengikat
+      tali silaturahmi.\n\n<b>Resep Gabus Pucung\nUntuk 6 porsi</b>\n\nBAHAN:\n\u2022
+      1 kg ikan gabus segar, siangi, bersihkan\n\u2022 1 sdm air jeruk nipis\n\u2022
+      \xBD sdt garam\n\u2022 Minyak untuk menggoreng\n\u2022 5 buah keluwak, ambil
+      dagingnya\n\u2022 1 batang serai, ambil bagian putihnya, memarkan\n\u2022 1
+      lembar daun salam\n\u2022 1 L air\n\nBumbu, haluskan:\n\u2022 2 butir kemiri
+      sangrai\n\u2022 3 buah cabai merah keriting\n\u2022 3 siung bawang putih\n\u2022
+      5 butir bawang merah\n\u2022 2 cm kencur\n\u2022 2 cm lengkuas\n\u2022 2 cm
+      kunyit bakar\n\u2022 1 cm terasi goreng\n\u2022 1 sdt garam\n\n<b>CARA MEMBUAT:</b>\n1.
+      Lumuri ikan dengan air jeruk nipis dan garam. Biarkan selama 15 menit.\n2.
+      Goreng ikan dalam minyak banyak hingga matang dan kulitnya kering. Angkat,
+      tiriskan, sisihkan.\n3. Panaskan 2 sdm sisa minyak, masukkan bumbu halus, tumis
+      hingga harum. Masukkan daging keluwak, serai, dan daun salam. Tumis terus hingga
+      matang dan harum.\n4. Tuangi air, masak hingga mendidih dan bumbu matang. Angkat.\n5.
+      Tuang di atas ikan gabus goreng, sajikan segera."
     foodSprite: {fileID: 21300000, guid: f2f009da1e5e5ba44b067a15e6d6b732, type: 3}
   - foodName: Sayur Besan
-    foodDescription: "**SAYUR BESAN - HIDANGAN ADAT PERNIKAHAN BETAWI**\r\n\r\nSayur
-      Besan adalah masakan khas Betawi yang disajikan dalam prosesi pernikahan, khususnya
-      ketika pihak keluarga pria berkunjung ke rumah keluarga wanita. Hidangan ini
-      melambangkan penghormatan dan harapan akan hubungan harmonis antara dua keluarga
-      besar.\r\n\r\nKeistimewaan Sayur Besan terletak pada bahan utamanya: **terubuk**
-      atau bunga tebu (juga dikenal sebagai \"telur tebu\" atau \"endog tebu\"),
-      yang melambangkan persatuan dan keharmonisan. Ketika dibuka, terubuk menunjukkan
-      bulir kecil seperti telur ikan yang menggambarkan kebersamaan keluarga besar.\r\n\r\nSayur
-      Besan ditetapkan sebagai Warisan Budaya Tak Benda oleh Kementerian Pendidikan
-      dan Kebudayaan RI pada tahun 2014. Kini, masakan ini semakin langka karena
-      bahan terubuk sulit ditemukan, dan menurut tradisi, tanpa terubuk, hidangan
-      ini bukanlah Sayur Besan.\r\n\r\n---\r\n\r\n**RESEP SAYUR BESAN**\r\n(untuk
-      \xB16 porsi)\r\n\r\n**BAHAN UTAMA:**\r\n\r\n* 500 gr pepaya muda, potong korek
-      api\r\n* 200 gr kacang panjang, potong 3 cm\r\n* 200 gr kentang, potong dadu
-      kecil\r\n* 100 gr wortel, potong korek api\r\n* 200 gr soun, rendam hingga
-      lunak\r\n* 2 batang serai, memarkan\r\n* 3 lembar daun salam\r\n* 1 liter santan
-      encer\r\n* 500 ml santan kental\r\n* 50 gr kucai, potong 3 cm\r\n* 6 buah terubuk
-      (bunga tebu), siangi\r\n* Garam dan gula merah secukupnya\r\n\r\n**BUMBU HALUS:**\r\n\r\n*
-      6 siung bawang merah\r\n* 4 siung bawang putih\r\n* 4 butir kemiri, sangrai\r\n*
-      2 cm lengkuas\r\n* 1 sdt ketumbar\r\n* \xBD sdt merica\r\n* 2 cm kunyit, bakar\r\n\r\n---\r\n\r\n**CARA
-      MEMBUAT:**\r\n\r\n1. Tumis bumbu halus bersama serai dan daun salam hingga
-      harum.\r\n2. Tuangkan santan encer, aduk rata, dan masak hingga mendidih.\r\n3.
-      Masukkan pepaya muda, kacang panjang, kentang, wortel, kucai, dan terubuk.
-      Masak hingga sayuran setengah matang.\r\n4. Tambahkan soun dan santan kental.
-      Masak dengan api kecil hingga semua sayuran matang dan bumbu meresap.\r\n5.
-      Tambahkan garam dan gula merah secukupnya. Koreksi rasa.\r\n6. Angkat, dan
-      sajikan hangat bersama nasi putih atau ketupat.\r\n"
+    foodDescription: "Sayur Besan adalah hidangan khusus yang dipersiapkan untuk
+      calon besan dalam prosesi pernikahan adat Betawi. Hidangan ini melambangkan
+      hubungan erat antar keluarga sekaligus menjadi bentuk penghormatan antar besan.
+      Konon, masyarakat Betawi mewajibkan orang tua mempelai pria membawa Sayur Besan
+      saat mengunjungi rumah orang tua mempelai wanita sebagai tanda penghormatan.\n\nDalam
+      satu porsi Sayur Besan biasanya terdiri dari kentang, soun atau bihun, ebi,
+      dan terubuk yang dimasak dalam kuah santan berwarna kuning kemerahan. Hidangan
+      ini biasa disantap hangat bersama nasi putih atau ketupat, lengkap dengan pelengkap
+      ikan asin.\n\nSayur Besan tercatat sebagai warisan budaya tak benda oleh Kementerian
+      Pendidikan dan Kebudayaan pada tahun 2014. Meski kini keberadaannya mulai langka
+      dan namanya jarang terdengar, hidangan ini memiliki keunikan tersendiri, terutama
+      karena bahan utamanya, bunga tebu yang juga dikenal sebagai tebu telur.\n\nAda
+      filosofi unik di balik bahan utama Sayur Besan, yaitu terubuk. Ketika terubuk
+      dibuka, akan terlihat kumpulan butiran seperti telur ikan yang melambangkan
+      persatuan orang-orang yang berkumpul rukun karena ikatan pernikahan. Terubuk
+      sendiri adalah pucuk tebu yang masih kuncup dan berbentuk bulir-bulir kecil
+      menyerupai telur ikan yang menggumpal, sehingga sering disebut \"endog tebu\"
+      atau \"telur tebu.\" Karena kelangkaannya, Sayur Besan tidak selalu tersedia,
+      dan menurut para penjual, tanpa terubuk, hidangan ini tidak bisa disebut Sayur
+      Besan.\n\n<b>Resep Sayur Besan</b>\n\nBahan Utama:\n\u2022 500 gr pepaya muda,
+      dipotong korek api\n\u2022 200 gr kacang panjang, potong 3 cm\n\u2022 200 gr
+      kentang, potong dadu kecil\n\u2022 100 gr wortel, potong korek api\n\u2022
+      200 gr soun, rendam hingga lunak\n\u2022 2 batang serai, memarkan\n\u2022 3
+      lembar daun salam\n\u2022 1 liter santan encer\n\u2022 500 ml santan kental\n\u2022
+      50 gr kucai, potong 3 cm\n\u2022 6 buah terubuk (Bunga tebu), siangi\n\u2022
+      Garam dan gula merah secukupnya\n\nBahan Bumbu Halus:\n\u2022 6 siung bawang
+      merah\n\u2022 4 siung bawang putih\n\u2022 4 butir kemiri, sangrai\n\u2022
+      2 cm lengkuas\n\u2022 1 sdt ketumbar\n\u2022 \xBD \_sdt merica\n\u2022 2 cm
+      kunyit, bakar\n\_\n<b>Cara Membuat Sayur Besan:</b>\n\n1. Tumis bumbu halus
+      bersama serai dan daun salam hingga harum\n2. Tuangkan santan encer ke dalam
+      bumbu tumis, aduk rata dan masak hingga mendidih\n3. Tambahkan pepaya muda,
+      kacang panjang, kentang, wortel, kucai, dan terubuk. Masak hingga sayuran setengah
+      matang\n4. Masukkan soun yang sudah direndam dan santan kental. Masak dengan
+      api kecil hingga semua sayuran matang dan bumbu meresap\n5. Tambahkan garam
+      dan gula merah secukupnya. Aduk rata dan koreksi rasa\n6. Angkat, sayur besan
+      siap disajikan\n"
     foodSprite: {fileID: 21300000, guid: 75a4161be51f0aa4b9957e99cb13bd22, type: 3}
   - foodName: Laksa Betawi
-    foodDescription: "**LAKSA BETAWI - PERPADUAN BUDAYA DALAM SEMANGKUK HIDANGAN**\r\n\r\nLaksa
-      Betawi merupakan sajian khas yang mencerminkan asimilasi budaya antara Melayu
-      Peranakan dan Tionghoa, yang diolah oleh masyarakat Cina Betawi. Kata \u201Claksa\u201D
-      berasal dari Bahasa Sanskerta yang berarti \u201Cbanyak,\u201D menggambarkan
-      kekayaan rasa dan bahan dalam hidangan ini.\r\n\r\nAwalnya berkembang di Cibinong
-      oleh pengusaha keturunan Cina Betawi, laksa menyebar ke Jakarta dan menjadi
-      populer sebagai menu tradisional pada acara syukuran, pengajian, pernikahan
-      (laksa penganten), hingga selametan haji. Laksa Betawi memiliki kuah santan
-      yang pekat berwarna kuning, berbeda dengan laksa Medan. Umumnya dinikmati bersama
-      ketupat, taoge pendek, telur rebus, daun kemangi, dan bisa dilengkapi dengan
-      semur daging atau telur.\r\n\r\n---\r\n\r\n**RESEP LAKSA BETAWI**\r\n(untuk
-      \xB14\u20136 porsi)\r\n\r\n**BAHAN UTAMA:**\r\n\r\n* \xBD ekor ayam, potong
-      4 bagian\r\n* 800 ml santan\r\n* 450 ml air\r\n* 2 batang serai, memarkan\r\n*
-      2 lembar daun salam\r\n* 4 lembar daun jeruk\r\n* Udang rebon secukupnya (bisa
-      diganti udang segar)\r\n\r\n**BUMBU HALUS:**\r\n\r\n* 1 bawang bombay atau
-      10 butir bawang merah\r\n* 5 siung bawang putih\r\n* 1 sdm ketumbar\r\n* 1
-      sdt kunyit bubuk\r\n* \xBD sdt jahe bubuk\r\n* 1 potong lengkuas\r\n* 6 butir
-      kemiri\r\n* Garam dan gula secukupnya\r\n\r\n**PELENGKAP:**\r\n\r\n* 150 gr
-      bihun, seduh air panas dan tiriskan\r\n* 2 butir telur rebus, iris\r\n* Taoge
-      pendek\r\n* Daun kemangi\r\n* Kucai, potong-potong\r\n* Bawang merah goreng\r\n*
-      Jeruk nipis\r\n* Perkedel (opsional)\r\n* Semur daging/telur (opsional)\r\n*
-      Sambal\r\n\r\n---\r\n\r\n**CARA MEMBUAT:**\r\n\r\n1. Tumis bumbu halus dengan
-      3 sdm minyak hingga harum.\r\n2. Masukkan santan dan air kaldu, aduk perlahan
-      hingga mendidih.\r\n3. Tambahkan udang rebon (atau udang segar), ayam, serai,
-      daun salam, dan daun jeruk.\r\n4. Masak hingga ayam matang, angkat dan suwir-suwir
-      dagingnya, lalu kembalikan ke dalam kuah.\r\n\r\n**CARA PENYAJIAN:**\r\n\r\n1.
-      Siapkan mangkuk, tata bihun, suwiran ayam, irisan telur, taoge, kemangi, kucai,
-      dan perkedel (jika pakai).\r\n2. Siram dengan kuah laksa panas.\r\n3. Taburi
-      bawang goreng, sajikan dengan jeruk nipis dan sambal.\r\n"
+    foodDescription: "Laksa Betawi memiliki nama yang berasal dari Bahasa Sansekerta,
+      yang berarti \"banyak,\" mencerminkan kekayaan budaya yang ada dalam kuliner
+      ini. Rasanya yang manis dan gurih merupakan hasil asimilasi antara budaya Melayu
+      Peranakan dan budaya Tionghoa. Di Jakarta, laksa ini banyak dijajakan oleh
+      warga keturunan Cina Betawi.\n\nLaksa Betawi awalnya berasal dari Cibinong,
+      yang dikelola oleh pengusaha makanan keturunan Cina Betawi. Dari Cibinong,
+      laksa kemudian menyebar ke Jakarta dan menjadi sangat populer, bahkan dikenal
+      dengan nama laksa Betawi. Hidangan ini biasanya dinikmati oleh masyarakat Betawi
+      dalam berbagai acara seperti syukuran, pernikahan (yang dikenal dengan laksa
+      penganten), sunatan, selametan berangkat haji, pengajian, dan berbagai kegiatan
+      lainnya.\n\nMeskipun laksa Betawi mirip dengan laksa Medan, keduanya tetap
+      memiliki perbedaan yang terlihat pada rasa dan bahan utamanya. Kuah laksa Betawi
+      lebih pekat dengan warna kuning khas yang berasal dari santan dan perpaduan
+      ebi atau terkadang rebon. Hidangan ini biasanya disajikan dengan ketupat, perkedel,
+      taoge pendek, telur rebus, daun kemangi, dan kucai. Bihun, suwiran daging ayam,
+      udang, atau tahu juga sering ditambahkan untuk memperkaya rasa. Laksa Betawi
+      sering dimakan bersama semur daging atau semur telur sebagai pelengkap.\n\n<b>Resep
+      Laksa Betawi</b>\n\nBahan Hidangan Berkuah Laksa Betawi ini :\n\u2022 1/2 ekor
+      ayam, potong 4\n\u2022 Santan (800ml)\n\u2022 450 ml air\n\u2022 Udang rebon
+      (Bisa diganti udang segar)\n\u2022 2 batang serai, memarkan\n\u2022 2 lembar
+      daun salam\n\u2022 4 lembar daun jeruk\n\u2022 Bumbu halus:\n\u2022 1 bawang
+      bombay (10 b.merah)\n\u2022 5 siung bawang putih\n\u2022 1 sdm ketumbar\n\u2022
+      1 sdt kunyit bubuk\n\u2022 1/2 sdt jahe bubuk\n\u2022 1 potong lengkuas\n\u2022
+      6 butir kemiri\n\u2022 garam & gula secukupnya\n\nPelengkap hidangan berkuah
+      ini :\n\u2022 150 gr bihun, seduh air mendidih, tiriskan\n\u2022 2 butir telur
+      rebus\n\u2022 toge pendek\n\u2022 daun kemangi\n\u2022 kucai\n\u2022 bawang
+      goreng\n\u2022 jeruk nipis\n\u2022 perkedel (optional)\n\u2022 semur (optional)\n\u2022
+      sambal\n\n<b>Cara Membuat:</b>\n1. Tumis bumbuh dengan 3 sdm minyak goreng,
+      hingga wangi. \n2. Masukkan santan dan kaldu, masak hingga mendidih. \n3. Masukkan
+      udang rebon (atau Udang segar), ayam, sereh, salam dan daun jeruk, masak hingga
+      matang dan suwir-suwir\n\nCara Menghidangkan\n1. Tempatkan bihun dimangkok,
+      beri suwiran ayam, irisan telur rebus, perkedel, daun kemangi, kucai. Tuangi
+      kuah laksa, taburi bawang goreng\n2. Hidangkan dengan sambal dan jeruk nipis.\n"
     foodSprite: {fileID: 21300000, guid: f40d9d12aa593de4093ec7aa69f189a3, type: 3}
   - foodName: Kue Sengkulun
-    foodDescription: "**KUE SENGKULUN \u2013 SIMBOL KESETIAAN DAN SILATURAHMI**\r\n\r\nKue
-      sengkulun berasal dari tradisi hulun-hulun pengabdi Kerajaan Sunda Kelapa yang
-      memberikan persembahan kepada keraton, atau Sang Kulun. Dalam budaya Betawi,
-      sengkulun adalah kudapan istimewa yang disuguhkan kepada para tetua atau pembesar
-      dalam momen penting seperti hari raya, upacara adat, dan pernikahan.\r\n\r\nKue
-      ini berbahan dasar tepung ketan yang lembut dan lengket, melambangkan ikatan
-      dan kebersamaan. Teksturnya yang kenyal dan rasa manis gurih dari kelapa parut
-      menjadikannya simbol kelekatan hubungan dalam keluarga dan masyarakat, terutama
-      dalam suasana silaturahmi.\r\n\r\n---\r\n\r\n**RESEP KUE SENGKULUN**\r\n\r\n**BAHAN:**\r\n\r\n*
-      200 gram tepung ketan\r\n* 50 gram tepung sagu (opsional, untuk kekenyalan)\r\n*
-      \xBD butir kelapa setengah tua, parut kasar\r\n* \xBD sdt garam\r\n* 150 gram
-      gula merah, serut halus\r\n* 2 lembar daun pandan\r\n* Air secukupnya\r\n*
-      Minyak untuk mengoles loyang\r\n* Kelapa parut kukus untuk taburan\r\n\r\n---\r\n\r\n**CARA
-      MEMBUAT:**\r\n\r\n1. Rebus gula merah dengan air dan daun pandan hingga larut,
-      saring, dan dinginkan.\r\n2. Campurkan tepung ketan, tepung sagu, dan garam.
-      Tuang larutan gula sedikit demi sedikit sambil diaduk hingga adonan kental
-      dan tercampur rata.\r\n3. Olesi loyang persegi dengan minyak. Tuang adonan
-      ke dalamnya.\r\n4. Kukus dalam dandang panas selama \xB130 menit hingga matang.\r\n5.
-      Angkat, dinginkan, dan potong sesuai selera.\r\n6. Sajikan dengan taburan kelapa
-      parut dan hiasan daun pandan.\r\n\r\n---\r\n\r\nKue sengkulun bukan sekadar
-      panganan, tapi juga media budaya yang menyampaikan pesan persatuan dan penghormatan
-      lintas generasi.\r\n"
+    foodDescription: "Menurut Kemdikbud, kue sengkulun berasal dari tradisi hulun-hulun
+      yang mengabdi pada Kerajaan Sunda Kelapa. Kudapan ini kemudian dijadikan sebagai
+      persembahan rakyat kepada keraton, yang dikenal dengan sebutan kulun. Meskipun
+      berbentuk kue, sengkulun menyimpan makna filosofis yang mendalam sebagai simbol
+      kesetiaan dan penghormatan kepada Raja Pakuan. Nama \u201Csengkulun\u201D sendiri
+      konon berasal dari istilah Sang Kulun yang merujuk pada keraton.\n\nDi masyarakat
+      Betawi, kue sengkulun sejak dulu dikenal sebagai kue khusus untuk orang-orang
+      yang dituakan atau pembesar, sehingga hanya dibuat pada momen-momen penting.
+      Biasanya, kue ini disajikan saat perayaan besar seperti Idul Fitri, Idul Adha,
+      upacara sedekah bumi, serta sebagai hantaran dalam pernikahan. \n\nTerbuat
+      dari tepung ketan, kue sengkulun memiliki tekstur lembut dan lengket, terutama
+      jika disajikan dengan parutan kelapa. Kue ini melambangkan persatuan dan ikatan
+      erat dalam silaturahmi, baik sebagai simbol keterikatan suami-istri dalam pernikahan
+      maupun sebagai penguat hubungan antar keluarga saat hari raya. Dalam kepercayaan
+      Jawa, ketan sendiri memiliki makna simbolis sebagai pengikat persaudaraan,
+      yang tercermin dalam tradisi berbagi hidangan kepada tetangga dan kerabat untuk
+      mempererat keakraban.\n\n<b>Resep Kue Sengkulun</b>\n\nBahan\n\u2022 200 gram
+      tepung ketan\n\u2022 Sagu sebagian\n\u2022 Kelapa setengah tua\n\u2022 Garam\n\u2022
+      Gula merah dan daun pandan\n\u2022 Kelapa parut\n\n<b>Cara Membuat</b>\n\n1.
+      Tepung ketan dan sagu dicampurkan gula dimasak bersama daun pandan\n2. Setelah
+      gula dingin dicapurkan dengan tepung tersebut, lalu diaduk-aduk sampai adonan
+      menjadi satu atau encer\n3. Masukkan ke dalam loyang persegi empat yang telah
+      lebih dahulu dipoles dengan minyak kemudian dikukus sampai kue tersebut masak.\n4.
+      Selanjutnya, angkat dan dinginkan serta potong-potong sesuai selera\n5. Saat
+      penyajian, setelah adonan dalam Loyang mengeras maka dipotong persegi dan ditaburi
+      dengan parutan kelapa dan hiasan daun pandan.\n"
     foodSprite: {fileID: 21300000, guid: a7a58cc40d26d214e827014cc36fdb64, type: 3}
   - foodName: Kue Dongkal
-    foodDescription: "**KUE DONGKAL \u2013 TUMPAENG MINI PENUH MAKNA**\r\n\r\nKue
-      dongkal adalah kudapan tradisional Betawi berbentuk seperti tumpeng kecil yang
-      disajikan dalam berbagai acara budaya seperti khitanan, syukuran, hingga Lebaran.
-      Terbuat dari tepung beras kukus dan gula merah, kue ini menawarkan perpaduan
-      rasa manis dan gurih, serta aroma khas dari proses pengukusan dengan *aseupan*,
-      kukusan kerucut anyaman bambu. Teksturnya yang kasar namun kenyal menjadikannya
-      berbeda dari kue putu.\r\n\r\nDongkal tak sekadar sajian, tapi simbol kearifan
-      lokal dan semangat pelestarian tradisi kuliner Betawi.\r\n\r\n---\r\n\r\n**RESEP
-      KUE DONGKAL**\r\n\r\n**BAHAN:**\r\n\r\n* 400 gr tepung beras\r\n* 100 gr kelapa
-      parut setengah tua\r\n* 1 sdm gula pasir\r\n* \xBD sdt vanili bubuk\r\n* 1
-      sdt garam\r\n* 200 gr gula merah, disisir halus\r\n\r\n**BAHAN TOPPING:**\r\n\r\n*
-      200 gr kelapa parut\r\n* \xBD sdt garam\r\n\r\n---\r\n\r\n**CARA MEMBUAT:**\r\n\r\n1.
-      Kukus tepung beras selama 15\u201320 menit. Angkat, tiriskan.\r\n2. Campur
-      tepung kukus dengan kelapa parut, garam, vanili, dan gula pasir. Aduk rata.\r\n3.
-      Siapkan cetakan (bentuk kerucut bila ada). Susun adonan secara bergantian dengan
-      lapisan gula merah.\r\n4. Kukus adonan selama 20\u201325 menit hingga matang
-      dan set.\r\n5. Angkat dan keluarkan dari cetakan.\r\n6. Taburi dengan kelapa
-      parut yang telah dicampur garam.\r\n\r\n---\r\n\r\nKue dongkal siap dinikmati
-      sebagai warisan rasa yang sarat nilai budaya.\r\n"
+    foodDescription: "Kue dongkal memiliki tekstur lembut dan kenyal, dengan perpaduan
+      rasa manis gula merah dan gurih kelapa parut yang khas. Kue ini terbuat dari
+      tepung beras yang dikukus dan diisi dengan gula aren. Salah satu ciri khas
+      kue dongkal adalah cetakannya yang berbentuk seperti tumpeng kecil. Tepung
+      beras yang sudah dikukus menjadi gumpalan-gumpalan kecil disiapkan terlebih
+      dahulu di rumah. Adonan kemudian dimasukkan ke dalam kukusan anyaman bambu
+      berbentuk topi caping ala petani, dengan lapisan gula merah yang disusun bergantian.
+      Proses pengukusan menggunakan kukusan tradisional tinggi yang berpanggang.
+      Dahulu, kue dongkal dibakar menggunakan kayu agar aromanya lebih smokey, namun
+      sekarang menggunakan bahan bakar gas demi kepraktisan.\n\nSetelah matang, kue
+      dongkal biasanya disajikan dengan parutan kelapa. Rasa kue ini sekilas mirip
+      dengan kue putu, tapi teksturnya lebih kasar dan pemberian gula aren ada di
+      dalamnya, berbeda dengan putu yang biasanya diberi gula di luar. Selain itu,
+      kue putu menggunakan cetakan bambu dan dikukus secara langsung, sementara dongkal
+      dikukus menggunakan alat khusus bernama aseupan, yaitu kukusan kerucut dari
+      anyaman bambu.\nKue dongkal dianggap sebagai simbol kearifan dan budaya Betawi
+      yang penting untuk dilestarikan. Kue ini biasanya ditemukan dalam berbagai
+      acara hajatan budaya Betawi, mulai dari khitanan, syukuran pembangunan rumah,
+      hingga perayaan Lebaran.\n\n<b>Resep Kue Dongkal</b>\n\nBahan:\n\u2022 400
+      gr tepung beras\n\u2022 100 gr kelapa parut\n\u2022 1 sdm gula pasir\n\u2022
+      \xBD sdt vanili bubuk\n\u2022 1 sdt garam\n\u2022 200 gr gula merah sisir\n\nBahan
+      Topping:\n\u2022 200 gr kelapa parut\n\u2022 \_\xBD sdt garam\n\n<b>Cara Membuat
+      Kue Dongkal:</b>\n1. Kukus tepung beras selama 15 hingga 20 menit sampai matang,
+      lalu angkat dan tiriskan\n2. Selanjutnya bikin adonannya, siapkan wadah, masukkan
+      tepung beras kukus, kelapa parut, garam, vanili, gula, aduk sampai tercampur
+      rata\n3. Susun adonan ke dalam cetakan, masukkan adonan kue, gula merah dan
+      masukkan adonan lagi\n4. Kemudian kukus selama 20 hingga 25 menit, hingga matang
+      dan adonan set dalam cetakan\n5. Setelah matang, angkat dan keluarkan kue dongkal
+      dari cetakan, lalu susun di piring saji\n6. Berikan taburan kelapa parut di
+      atasnya, kelapa parut ini sudah di beri garam secukupnya ya\n7. Kue dongkal
+      khas betawi siap dinikmati"
     foodSprite: {fileID: 21300000, guid: d1d5143196202014c981347f9655eb9e, type: 3}
   - foodName: Sayur Babanci
-    foodDescription: "**KETUPAT BABANCI \u2013 GULE TANPA SAYUR, WARISAN REMPAH BETAWI**\r\n\r\nKetupat
-      Babanci, hidangan khas Betawi yang kaya rasa dan sejarah, secara unik disebut
-      *sayur* meski tak mengandung sayuran. Sajian ini identik dengan momen Lebaran,
-      dikenal lewat cita rasa rempahnya yang kompleks dan kental, mirip gule namun
-      dengan karakter yang lebih tajam dan berlapis. Menggunakan hingga 28 bahan,
-      termasuk rempah langka seperti lempuyang dan kedaung, ketupat babanci adalah
-      cermin akulturasi budaya Arab, Tionghoa, dan Betawi.\r\n\r\nMeski bahan utama
-      adalah daging sapi, justru kelapa \u2014 dalam segala bentuknya: santan, air
-      kelapa muda, parutan kelapa, hingga srundeng \u2014 yang menjadi penanda utama
-      hidangan ini. Dahulu, ketupat babanci adalah sajian mewah keluarga bangsawan
-      Betawi, namun kini menjadi simbol keragaman kuliner yang tak lekang oleh waktu.\r\n\r\n---\r\n\r\n**RESEP
-      KETUPAT BABANCI**\r\n\r\n**Bahan Utama:**\r\n\r\n* 1 kg daging sapi (sengkel/sandung
-      lamur), rebus & potong\r\n* 1 butir kelapa muda (air & santannya)\r\n* 1 sdm
-      gula merah, sisir\r\n* 3 lembar daun salam\r\n* 2 batang serai, memarkan\r\n*
-      2 ruas lengkuas, memarkan\r\n* 1 ruas jahe, memarkan\r\n* 1/4 sdt pala bubuk\r\n*
-      Garam secukupnya\r\n* Minyak goreng\r\n\r\n**Rempah Sangrai (haluskan):**\r\n\r\n*
-      1/2 sdt ketumbar\r\n* 1/2 sdt jintan\r\n* 1/2 sdt lada hitam\r\n\r\n**Bumbu
-      Halus:**\r\n\r\n* 5 siung bawang merah\r\n* 3 siung bawang putih\r\n* 5 cabai
-      merah keriting\r\n* 2 cabai rawit\r\n* 1 ruas kunyit\r\n* 1 ruas jahe\r\n\r\n**Pelengkap:**\r\n\r\n*
-      Ketupat matang, potong-potong\r\n* Bawang goreng & sambal\r\n\r\n---\r\n\r\n**Cara
-      Membuat:**\r\n\r\n1. **Rebus daging** hingga empuk, potong sesuai selera. Sisihkan
-      air kaldunya.\r\n2. **Sangrai ketumbar, jintan, dan lada hitam**, haluskan.\r\n3.
-      **Tumis bumbu halus** hingga harum. Tambahkan daun salam, serai, lengkuas,
-      jahe, dan gula merah.\r\n4. Masukkan daging sapi, aduk rata. Tuang **air kelapa
-      muda dan santan**, aduk perlahan.\r\n5. Tambahkan rempah sangrai dan pala bubuk.
-      Masak dengan api kecil hingga kuah mengental dan meresap.\r\n6. Masukkan potongan
-      ketupat, biarkan terendam kuah agar menyerap cita rasa.\r\n7. Masak hingga
-      kuah menyusut dan kental. Angkat.\r\n\r\n---\r\n\r\n**Sajikan Ketupat Babanci**
-      hangat-hangat dengan bawang goreng dan sambal, rasakan gurih rempah dan kekayaan
-      rasa yang menjadi warisan kuliner Betawi.\r\n\n---\r\n"
+    foodDescription: "Ketupat Babanci, yang juga dikenal sebagai sayur babanci, adalah
+      sajian istimewa khas Betawi yang biasanya disajikan saat perayaan Idul Fitri.
+      Meski disebut sayur, hidangan ini sebenarnya tidak mengandung sayuran sama
+      sekali dan sekilas mirip dengan gule karena aroma dan rasa rempahnya yang sangat
+      kuat. Daging kepala sapi adalah bahan utama yang digunakan, meskipun kini banyak
+      yang menggantinya dengan daging sapi bercampur lemak. Selain itu, serutan kelapa
+      dan srundeng halus juga ditambahkan pada akhir proses memasak untuk memperkaya
+      cita rasa.\n\nYang menarik dari ketupat babanci adalah kompleksitasnya, karena
+      hidangan ini menggunakan sekitar 28 bahan berbeda. Dahulu, bumbunya sangat
+      lengkap, meliputi bahan-bahan langka seperti lempuyang, temu mangga, temu kunci,
+      dan bangle, yang kini sulit didapatkan, termasuk kacang botor, kedaung, dan
+      tahi angin. Walaupun daging sapi menjadi isi utama, yang benar-benar menjadi
+      ciri khas ketupat babanci adalah kelapa. Berbagai bagian kelapa digunakan,
+      mulai dari daging kelapa muda sebagai isi, air kelapa muda, santan, hingga
+      kelapa yang disangrai. Kombinasi ini menghasilkan perpaduan rasa gurih, asam,
+      dan manis yang unik saat disantap.\nSayur babanci biasanya disajikan bersama
+      lontong atau ketupat, namun seiring waktu, juga kerap dinikmati bersama nasi.
+      Dari segi bumbu dan rempahnya, ketupat babanci merupakan hasil akulturasi tiga
+      budaya utama: Arab, Tionghoa, dan Betawi. Pengaruh Arab terlihat dari penggunaan
+      rempah seperti jintan; pengaruh Tionghoa berasal dari sejarah masyarakat Tionghoa-Betawi
+      yang banyak memasak hidangan ini; sementara pengaruh asli Betawi tampak dalam
+      penggunaan rempah khas seperti botor, kedaung, dan tahi angin.\n\nMenurut buku
+      Kuliner Betawi Selaksa Rasa & Cerita, nama \"babanci\" kemungkinan berasal
+      dari kata \"Baba-Enci,\" panggilan khas Tionghoa, yang mencerminkan pengaruh
+      Peranakan Tionghoa-Betawi. Ada juga pendapat lain yang menyebutkan bahwa \"babanci\"
+      berasal dari \"Babeh-Encing,\" panggilan Betawi untuk ayah dan bibi. Dahulu,
+      ketupat babanci dianggap sebagai menu mewah yang hanya disajikan oleh keluarga
+      Betawi bek, seperti mandor atau tuan tanah. \n\n<b>Bahan-bahan:</b>\n\u2022
+      1 kg daging sapi (bagian sengkel atau sandung lamur)\n\u2022 1 butir kelapa
+      muda, ambil air dan santannya\n\u2022 1/2 sdt ketumbar, sangrai dan haluskan\n\u2022
+      1/2 sdt jintan, sangrai dan haluskan\n\u2022 1/2 sdt lada hitam, sangrai dan
+      haluskan\n\u2022 1/4 sdt pala bubuk\n\u2022 3 lembar daun salam\n\u2022 2 batang
+      serai, memarkan\n\u2022 2 ruas lengkuas, memarkan\n\u2022 1 ruas jahe, memarkan\n\u2022
+      1 sdm gula merah, sisir halus\n\u2022 Garam secukupnya\n\u2022 Minyak goreng
+      secukupnya\n\u2022 Ketupat secukupnya\n\nBumbu halus:\n\u2022 5 siung bawang
+      merah\n\u2022 3 siung bawang putih\n\u2022 5 buah cabai merah keriting\n\u2022
+      2 buah cabai rawit\n\u2022 1 ruas kunyit\n\u2022 1 ruas jahe\n\n<b>Langkah-langkah:</b>\n1.
+      Rebus daging sapi hingga empuk. Tiriskan dan potong-potong sesuai selera.\n2.
+      Sangrai ketumbar, jintan, dan lada hitam hingga harum. Haluskan dan sisihkan.\n3.
+      Tumis bumbu halus hingga harum. Masukkan daun salam, serai, lengkuas, jahe,
+      dan gula merah. Masak hingga bumbu matang.\n4. Masukkan daging sapi dan aduk
+      rata. Tuang air kelapa muda dan santan. Masak hingga kuah mengental.\n5. Bumbui
+      dengan garam dan pala bubuk. Aduk rata dan masak hingga daging benar-benar
+      empuk.\n6. Siapkan ketupat yang sudah direbus dan dipotong-potong. Masukkan
+      ketupat ke dalam kuah daging. Masak hingga ketupat terendam kuah.\n7. Masak
+      dengan api kecil hingga kuah meresap ke dalam ketupat.\n8. Angkat dan sajikan
+      ketupat babanci dengan taburan bawang goreng dan sambal."
     foodSprite: {fileID: 21300000, guid: 4b6ed0e9a8fbddd48a3a80080410c616, type: 3}
   - foodName: Kue Talam
-    foodDescription: "Kue talam adalah kue tradisional Indonesia dengan tekstur lembut
-      dan rasa manis yang khas. Kue ini memiliki dua lapisan, lapisan bawah manis
-      dan lapisan atas gurih, melambangkan kekentalan hubungan antar kerabat dan
-      perpaduan rasa kehidupan manusia. Kue talam tersedia dalam berbagai varian
-      seperti Talam Pandan, Talam Ubi, Talam Jagung, dan Talam Labu.\r\n\r\nBahan
-      utama kue talam biasanya tepung beras, tepung sagu, tepung tapioka, atau tepung
-      terigu, dengan pewarna alami seperti daun pandan atau daun suji. Kue ini berasal
-      dari pengaruh kuliner Tionghoa dan Belanda di Batavia dan pernah menjadi hidangan
-      khusus bangsawan pada masa kolonial.\r\n\r\n**Resep Kue Talam Ubi Kuning**\r\n\r\n**Bahan
-      Lapisan Bawah (Ubi):**\r\n\r\n* 250 gr ubi kuning, kukus dan haluskan\r\n*
-      100 gr tepung tapioka\r\n* 50 gr tepung beras\r\n* 100 gr gula pasir\r\n* 200
-      ml santan\r\n* \xBD sdt garam\r\n* 2 lembar daun pandan, simpulkan\r\n\r\n**Bahan
-      Lapisan Atas (Santan):**\r\n\r\n* 100 gr tepung beras\r\n* 25 gr tepung tapioka\r\n*
-      400 ml santan\r\n* \xBD sdt garam\r\n* 1 lembar daun pandan, simpulkan\r\n\r\n**Cara
-      Membuat:**\r\n\r\n1. Campur ubi halus dengan tepung tapioka, tepung beras,
-      gula, santan, dan garam. Aduk rata.\r\n2. Panaskan adonan di panci dengan api
-      kecil sambil diaduk hingga mengental, angkat.\r\n3. Siapkan loyang, oles minyak
-      atau alas daun pisang.\r\n4. Tuang adonan lapisan bawah ke loyang hingga setengah
-      penuh, ratakan. Kukus 10-15 menit hingga setengah matang.\r\n5. Campur tepung
-      beras, tepung tapioka, santan, dan garam untuk lapisan atas. Aduk rata.\r\n6.
-      Panaskan adonan lapisan atas hingga mengental, angkat.\r\n7. Tuang lapisan
-      atas di atas lapisan bawah setengah matang, ratakan. Kukus 15-20 menit hingga
-      matang.\r\n8. Angkat, dinginkan, potong sesuai selera, sajikan.\r\n"
+    foodDescription: "Kue talam adalah kue tradisional Indonesia yang memiliki tekstur
+      lembut dan cita rasa manis, serta ciri khas warna-warni yang cantik. Kue ini
+      bukan hanya populer karena tampilannya yang menarik, tetapi juga memiliki filosofi
+      yang mendalam. Teksturnya yang lentur dan lengket melambangkan kekentalan hubungan
+      antar kerabat, sementara perpaduan rasa gurih, manis, dan legit menggambarkan
+      sejarah kehidupan manusia di dunia. Oleh karena itu, kue talam dibuat dengan
+      dua lapisan: lapisan bawah yang manis dan lapisan atas yang gurih.\n\t\nKue
+      talam telah ada sejak lama dan memiliki berbagai varian yang unik, tergantung
+      pada bahan baku yang digunakan dan preferensi masyarakat di setiap daerah.
+      Beberapa varian terkenal antara lain Talam Pandan yang berwarna hijau dan putih
+      dengan aroma pandan yang khas, Talam Ubi yang menggunakan ubi kuning, ungu,
+      atau merah, Talam Jagung yang memiliki rasa manis alami dari jagung manis,
+      dan Talam Labu yang menggunakan labu kuning sebagai bahan utama, memberikan
+      warna oranye alami dan rasa manis.\n\nBahan dasar kue talam biasanya berupa
+      tepung beras, tepung sagu, tepung tapioka, atau tepung terigu, meskipun terkadang
+      juga menggunakan bahan lain seperti ubi dan kentang. Kue talam menggunakan
+      bahan pelengkap seperti gula merah, daun pandan untuk pewarna alami, dan sedikit
+      garam. Kue talam yang berwarna hijau memiliki cita rasa yang lezat, terutama
+      jika menggunakan daun pandan atau daun suji sebagai pewarna alami. Dengan bahan-bahan
+      yang berwarna-warni, kue talam berlapis-lapis ini tidak hanya menggugah selera
+      dengan cita rasa manis dan gurih, tetapi juga memikat dengan tampilannya yang
+      cantik.\n\nMeskipun dikenal sebagai jajanan jadul, kue talam tetap menjadi
+      bagian dari kuliner tradisional Indonesia, dengan tampilan warna-warni yang
+      menarik dan cita rasa yang khas. Kue ini bahkan memiliki sejarah panjang lebih
+      dari 500 tahun, berasal dari pengaruh kuliner Tionghoa dan Belanda di kawasan
+      Batavia. Kata \"kue\" berasal dari bahasa Hokkien 'koe', yang berarti kue tradisional
+      Peranakan Tionghoa, sementara \"talam\" merujuk pada loyang bulat tempat meletakkan
+      kue ini. Pada zaman kolonial, kue talam hanya disajikan sebagai makanan pembuka
+      bagi kalangan bangsawan, karena proses pembuatan dan bahan-bahannya yang cukup
+      rumit. Dahulu, kue talam dibuat dengan bahan utama ubi, ketan, gula, dan santan,
+      serta disajikan sebagai tanda penghormatan tuan rumah kepada tamu yang dianggap
+      sebagai kerabat.\n\n<b>Resep Kue Talam Ubi Kuning</b>\n\nBahan-Bahan Kue Talam
+      Ubi:\nLapisan Bawah (Ubi):\n\u2022 \_250 gr ubi kuning, kukus, dan haluskan\n\u2022
+      \_100 gr tepung tapioka\n\u2022 \_50 gr tepung beras\n\u2022 \_100 gr gula
+      pasir\n\u2022 \_200 ml santan\n\u2022 \_\xBD \_sdt garam\n\u2022 \_2 lembar
+      daun pandan, simpulkan\n\nLapisan Atas (Santan):\n\u2022 \_100 gr tepung beras\n\u2022
+      \_25 gr tepung tapioka\n\u2022 \_400 ml santan\n\u2022 \_\xBD \_sdt garam\n\u2022
+      \_1 lembar daun pandan, simpulkan\n\n<b>Cara Membuat Talam Ubi:</b>\n1. Membuat
+      lapisan bawah, campurkan ubi kuning yang sudah dihaluskan dengan tepung tapioka,
+      tepung beras, gula pasir, santan, dan garam. Aduk rata hingga menjadi adonan
+      yang halus\n2. Panaskan adonan dalam panci dengan api kecil sambil terus diaduk
+      hingga mengental, angkat dan sisihkan\n3. \_Siapkan loyang cetakan talam, olesi
+      dengan sedikit minyak atau alasi dengan daun pisang untuk mencegah lengket
+      pada loyang\n4. Panaskan kukusan, sambil menunggu tuangkan adonan lapisan bawah
+      ke dalam loyang cetakan hingga setengah penuh dan ratakan permukaannya.\n5.
+      Kemudian kukus adonan ke dalam kukusan selama 10-15 menit hingga setengah matang\n6.
+      \_Selanjutnya buat lapisan atas. Campurkan tepung beras, tepung tapioka, santan,
+      dan garam, lalu aduk rata\n7. Panaskan adonan dalam panci dengan api kecil
+      sambil terus diaduk hingga mengental, lalu angkat dan sisihkan\n8. Tuangkan
+      adonan lapisan atas di atas adonan lapis bawah setengah matang tadi, lalu rapikan
+      hingga permukaannya rata. Kemudian kukus kembali selama 15-20 menit hingga
+      matang\n9. Setelah matang, angkat cetakan dari kukusan dan biarkan dingin sebelum
+      dikeluarkan dari cetakan\n10. Potong- potong sesuai selera dan sajikan atau
+      bisa juga disajikan dengan cetakan sendiri khusus talam"
     foodSprite: {fileID: 21300000, guid: 7bb9eec038ce89c468265eeba8ba0fcb, type: 3}
   - foodName: Kue Geplak
-    foodDescription: 'Kue Geplak Betawi berasal dari kata "geplak" yang berarti keras,
-      merujuk pada proses memadatkan adonan hingga padat dan keras. Saat disajikan,
-      kue ini dalam ukuran besar dan utuh, perlu dipotong sebelum disantap. Rasanya
-      manis dan cocok dipadukan dengan minuman panas seperti teh atau kopi pahit.
-
-      
-
-      Kue
-      ini sering hadir dalam acara penting Betawi seperti lamaran, pernikahan, dan
-      Idul Fitri. Filosofi kue geplak tercermin dari bahan-bahannya: beras melambangkan
-      kemakmuran dan kebersamaan, sementara proses memadatkan adonan yang awalnya
-      terpisah melambangkan persatuan masyarakat Betawi. Berbeda dengan ketan yang
-      melambangkan ikatan silaturahmi, tepung beras dalam kue geplak melambangkan
-      keberkahan dan penyambung tali silaturahmi.
-
-      
-
-      Dulu, kue ini
-      dicetak besar dalam berbagai bentuk dan dipotong kecil saat disajikan. Kini,
-      bentuknya lebih kecil mengikuti gaya Eropa agar lebih praktis dan mudah disantap.
-
-      
-
-      **Resep
-      Kue Geplak**
-
-      
-
-      **Bahan-bahan:**
-
-      
-
-      * 1 kg tepung
-      beras
-
-      * 1 butir kelapa parut
-
-      * 300 gr gula merah
-
-      *
-      200 gr gula pasir
-
-      * 1 sdt garam
-
-      * 600 ml air
-
-      * 10 lembar
-      daun pandan
-
-      * Taburan: 100 gr tepung beras sangrai
-
-      
-
-      **Cara
-      Membuat:**
-
-      
-
-      1. Sangrai tepung beras dan 5 lembar daun pandan
-      dengan api kecil sambil diaduk hingga tepung terasa ringan dan berwarna kekuningan.
-      Angkat.
-
-      2. Sangrai kelapa dengan api kecil hingga berubah warna kuning
-      kecoklatan. Angkat.
-
-      3. Rebus air, gula merah, dan 5 lembar daun pandan
-      hingga gula larut dan mendidih. Angkat dan saring.
-
-      4. Campur tepung
-      sangrai, garam, dan kelapa sangrai, aduk rata. Tambahkan air gula sedikit demi
-      sedikit sambil diaduk hingga adonan bisa dipadatkan.
-
-      5. Cetak adonan
-      dalam loyang, padatkan, dan diamkan hingga dingin.
-
-      6. Taburi dengan
-      tepung beras sangrai.
-
-      7. Setelah dingin, potong-potong dan sajikan.
-
-'
+    foodDescription: "Kue Geplak Betawi dinamakan demikian karena berasal dari kata
+      \"geplak\" dalam bahasa Betawi kuno yang berarti keras. Bukan keras secara
+      tekstur, melainkan karena kue ini dipadatkan hingga mengeras. Nama ini juga
+      berasal dari bunyi saat pembuatannya, yaitu proses memadatkan dan menekan adonan
+      secara berulang hingga menghasilkan kue yang padat dan keras. Saat disajikan,
+      kue geplak biasanya tetap dalam ukuran besar dan utuh, sehingga perlu dipotong-potong
+      sebelum disantap. Rasanya yang manis sangat nikmat jika dipadukan dengan minuman
+      panas seperti teh atau kopi pahit, yang berfungsi menyeimbangkan rasa manis
+      kue ini.\n\nDi kalangan masyarakat Betawi asli, kue geplak sering muncul dalam
+      acara penting seperti lamaran, pernikahan, dan perayaan Idul Fitri. Filosofi
+      kue ini tercermin dari bahan-bahannya, terutama beras yang melambangkan kemakmuran
+      dan kebersamaan masyarakat setempat. Tepung dan parutan kelapa, yang awalnya
+      terpisah dan tidak menyatu seperti pasir, menjadi satu ketika dicampur dengan
+      sirup sederhana, melambangkan pelestarian keragaman dan persatuan di antara
+      masyarakat Betawi.\n\nJika makanan terbuat dari ketan, artinya melambangkan
+      ikatan silaturahmi yang erat. Namun, karena kue geplak dibuat dari tepung beras,
+      hal ini menunjukkan keberkahan sekaligus penyambung tali silaturahmi. Proses
+      pembuatannya yang awalnya adonan berserakan kemudian dirapatkan kembali menggambarkan
+      filosofi tersebut.\nMeski keberadaannya masih eksis hingga kini, kue geplak
+      telah mengalami perubahan bentuk dari waktu ke waktu. Dulu, kue ini dicetak
+      dalam bentuk bulat, kotak, atau persegi panjang dan disajikan dalam ukuran
+      besar yang kemudian dipotong-potong menjadi bagian kecil. Namun kini, kue geplak
+      sering dibuat dalam ukuran yang lebih kecil, terinspirasi dari kebiasaan Eropa,
+      terutama Perancis, yang menyajikan kue kecil seperti petit fours. Ukuran kecil
+      ini membuat kue lebih praktis dan mudah disantap dalam sekali gigitan dibandingkan
+      ukuran besar sebelumnya.\n\nResep Kue Geplak\n\nBAHAN-BAHAN\n\n\u2022 1 kg
+      tepung beras\n\u2022 1 butir kelapa parut\n\u2022 300 gr gula merah\n\u2022
+      200 gr gula pasir\n\u2022 1 sdt garam\n\u2022 600 ml air\n\u2022 10 lembar
+      daun pandan\n\u2022 Taburan : 100 gr tepung beras sangrai.\n\nCARA MEMBUAT\n\n1.
+      Sangrai tepung beras dan 5 lembar daun pandan dengan api kecil, sambil terus
+      diaduk-aduk hingga tepung terasa ringan dan berubah warna sedikit kekuningan.
+      Patokannya daun pandan akan sangat kering tanda tepung sudah matang. Angkat
+      dan sisihkan.\n2. Sangrai kelapa dengan api kecil sambil terus diaduk-aduk,
+      hingga kelapa berubah menjadi kuning kecoklatan. Angkat dan sisihkan.\n3. Rebus
+      air, gula merah, dan 5 lembar daun pandan hingga gula larut dan mendidih. Angkat
+      dan saring lalu sisihkan.\n4. Campur jadi satu tepung sangrai, garam, dan kelapa
+      sangrai aduk rata, lalu masukkan air gula sedikit demi sedikit sambil di aduk
+      rata hingga adonan bila dikepal bisa menyatu, hentikan pemakaian air gula.\n5.
+      Setelah adonan semua tercampur rata, cetak dalam wadah atau loyang. Cetak dan
+      padatkan. Diamkan hingga geplak dingin, lalu tabur dengan sedikit tepung beras
+      sangrai.\n6. Setelah dingin, siap dipotong-potong dan disajikan. Kue geplak
+      siap disantap."
     foodSprite: {fileID: 21300000, guid: dd5db55fd6a4dbd42b3c16403fa226c3, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
